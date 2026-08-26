@@ -1,0 +1,7 @@
+{
+  // indentationRules bifurcated from Lua
+  "indentationRules": {
+    "increaseIndentPattern": "^((?!(^\\s*#)).)*((\\b(function|then|do|in)\\b((?!\\b(fi|done)\\b).)*)|(\\{\\s*))$",
+    "decreaseIndentPattern": "^\\s*((\\b(elif|else|fi|done|esac)\\b)|(\\})|(\\)))"
+  }
+}
