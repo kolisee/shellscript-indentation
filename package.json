@@ -2,7 +2,7 @@
   "name": "shellscript-indentation",
   "displayName": "shellscript-indentation",
   "description": "Adds automatic indentation for shellscripts (bash etc.).",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "kolisee",
   "license": "MIT",
   "repository": {
@@ -22,54 +22,56 @@
     "indent"
   ],
   "contributes": {
-    "languages": [{
-      "id": "shellscript",
-      "aliases": [
-        "Shell Script",
-        "shellscript",
-        "bash",
-        "fish",
-        "sh",
-        "zsh",
-        "ksh",
-        "csh"
-      ],
-      "extensions": [
-        ".sh",
-        ".bash",
-        ".bashrc",
-        ".bash_aliases",
-        ".bash_profile",
-        ".bash_login",
-        ".ebuild",
-        ".eclass",
-        ".profile",
-        ".bash_logout",
-        ".xprofile",
-        ".xsession",
-        ".xsessionrc",
-        ".Xsession",
-        ".zsh",
-        ".zshrc",
-        ".zprofile",
-        ".zlogin",
-        ".zlogout",
-        ".zshenv",
-        ".zsh-theme",
-        ".fish",
-        ".ksh",
-        ".csh",
-        ".cshrc",
-        ".tcshrc",
-        ".yashrc",
-        ".yash_profile"
-      ],
-      "firstLine": "^#!.*\\b(bash|fish|zsh|sh|ksh|dtksh|pdksh|mksh|ash|dash|yash|sh|csh|jcsh|tcsh|itcsh).*|^#\\s*-\\*-[^*]*mode:\\s*shell-script[^*]*-\\*-",
-      "configuration": "./language-configuration.json",
-      "mimetypes": [
-        "text/x-shellscript"
-      ]
-    }],
+    "languages": [
+      {
+        "id": "shellscript",
+        "aliases": [
+          "Shell Script",
+          "shellscript",
+          "bash",
+          "fish",
+          "sh",
+          "zsh",
+          "ksh",
+          "csh"
+        ],
+        "extensions": [
+          ".sh",
+          ".bash",
+          ".bashrc",
+          ".bash_aliases",
+          ".bash_profile",
+          ".bash_login",
+          ".ebuild",
+          ".eclass",
+          ".profile",
+          ".bash_logout",
+          ".xprofile",
+          ".xsession",
+          ".xsessionrc",
+          ".Xsession",
+          ".zsh",
+          ".zshrc",
+          ".zprofile",
+          ".zlogin",
+          ".zlogout",
+          ".zshenv",
+          ".zsh-theme",
+          ".fish",
+          ".ksh",
+          ".csh",
+          ".cshrc",
+          ".tcshrc",
+          ".yashrc",
+          ".yash_profile"
+        ],
+        "firstLine": "^#!.*\\b(bash|fish|zsh|sh|ksh|dtksh|pdksh|mksh|ash|dash|yash|sh|csh|jcsh|tcsh|itcsh).*|^#\\s*-\\*-[^*]*mode:\\s*shell-script[^*]*-\\*-",
+        "configuration": "./language-configuration.json",
+        "mimetypes": [
+          "text/x-shellscript"
+        ]
+      }
+    ],
     "configurationDefaults": {
       "[shellscript]": {
         "files.eol": "\n",
