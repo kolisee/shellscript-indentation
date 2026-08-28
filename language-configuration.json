@@ -1,7 +1,22 @@
 {
   // indentationRules bifurcated from Lua
   "indentationRules": {
-    "increaseIndentPattern": "^((?!(^\\s*#)).)*((\\b(else|function|then|do|in)\\b((?!\\b(fi|done)\\b).)*)|(\\{\\s*))$",
+    "increaseIndentPattern": "^((?!(^\\s*#)).)*((\\b(else|function|then|do|in)\\b((?!\\b(fi|done|esac)\\b).)*)|(\\{\\s*))$",
     "decreaseIndentPattern": "^\\s*((\\b(elif|else|fi|done|esac)\\b)|(\\})|(\\)))"
-  }
+  },
+  // case conditional
+  "onEnterRules": [
+    {
+      "beforeText": "^((?!(^\\s*#|\\(|^\\s+\\))).)*(\\))\\s*$",
+      "action": {
+        "indent": "indent"
+      }
+    },
+    {
+      "beforeText": "(^\\s+;;$)|(^\\s+;&$)|(^\\s+;;&$)",
+      "action": {
+        "indent": "outdent"
+      }
+    }
+  ]
 }
