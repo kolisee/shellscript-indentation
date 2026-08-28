@@ -2,7 +2,7 @@
   "name": "shellscript-indentation",
   "displayName": "shellscript-indentation",
   "description": "Adds automatic indentation for shellscripts (bash etc.).",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "kolisee",
   "license": "MIT",
   "repository": {
